@@ -15,7 +15,7 @@ def test_binary_search():
   assert binary_search([1, 5], 1) == 0
 
 
-### TODO: add two more tests here.
+### TODO: add two more tests here
 
 ###
 
@@ -31,6 +31,3 @@ def test_compare_search():
 
 # print_results(compare_search())
 
-
-def test_print_results():
-  print_results(compare_search())

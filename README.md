@@ -59,19 +59,19 @@ The best case for a binary search would be a key which matches the first middle 
 **TODO: add your timing results here**
 |            n |   linear |   binary |
 |--------------|----------|----------|
-|       10.000 |   10.532 |    0.018 |
-|      100.000 |    0.012 |    0.005 |
-|     1000.000 |    0.102 |    0.008 |
-|    10000.000 |    1.136 |    0.027 |
-|   100000.000 |   18.683 |    0.031 |
-|  1000000.000 |  500.864 |    0.029 |
-| 10000000.000 | 4791.628 |    0.052 |
+|       10.000 |    0.005 |    0.022 |
+|      100.000 |    0.009 |    0.005 |
+|     1000.000 |    0.100 |    0.007 |
+|    10000.000 |    1.340 |    0.025 |
+|   100000.000 |   84.868 |    0.031 |
+|  1000000.000 |  383.723 |    0.036 |
+| 10000000.000 | 7022.519 |    0.056 |
 
 
 - [ ] 9. The theoretical worst-case running time of linear search is $O(n)$ and binary search is $O(log_2(n))$. Do these theoretical running times match your empirical results? Why or why not?
 
 **TODO: your answer goes here**
-These match my empirical results other than the first case of n. This probably has to do with the first case needing some extra time to "boot up". After the first case, the linear search is linear and the binary search is logarithmic.
+My empirical results generally match the theoretical results. Linear increases linearly and binary increases logarithmically. In binary there is a slight anomaly where the first case takes longer than it theoretically should. This probably has to do with it booting up.
 
 - [ ] 10. Binary search assumes the input list is already sorted. Assume it takes $\Theta(n^2)$ time to sort a list of length $n$. Suppose you know ahead of time that you will search the same list $k$ times. 
   + What is worst-case complexity of searching a list of $n$ elements $k$ times using linear search? **TODO: your answer goes here**
